@@ -2,7 +2,7 @@
 
 ## 项目概述
 
-**Other Storage** 是一个融合存储文件系统，旨在实现对多种云服务和本地存储协议的无缝整合。通过条带化、奇偶校验等技术，该系统能高效地存取数据，并通过 REST API 提供统一的访问接口。
+**Other Storage** 是一个融合存储文件系统，旨在实现对多种云服务和本地存储协议的无缝整合。通过条带化、奇偶校验等技术，该系统能高效地存取数据，并提供统一的访问接口。
 
 ## 项目架构
 
@@ -11,20 +11,32 @@
 1. **HostProvider**
    - **RestHost**：实现 RESTful API 访问。
    - **SoapHost**：实现 SOAP 服务访问（待实现）。
+   - **GrpcHost**: 实现 GRPC 调用访问（待实现）。
 
 2. **SecurityProvider**
    - **OpenSecurity**：实现数据加密和解密功能，确保数据传输和存储的安全性。
 
 3. **StorageProvider**
-   - **RAID5Storage**：实现 RAID5 存储策略。
-   - **Raid0Storage**：实现 RAID0 存储策略（待实现）。
+   - **RAID0Storage**：实现 RAID0 存储策略。
+   - **Raid5Storage**：实现 RAID5 存储策略（待实现）。
 
 4. **CacheProvider**
    - **KvCache**：实现基于键值的缓存功能。
 
 5. **ProtocolProvider**
-   - **S3Protocol**：实现与 S3 兼容的存储协议。
+   - **S3Protocol**：实现与 Aws S3 兼容的存储协议。
    - **WebDavProtocol**：实现 WebDAV 协议支持（待实现）。
+   - **SFTPProtocol**：实现 SFTP 协议支持（待实现）。
+   - **SMBProtocol**：实现 SMB 协议支持（待实现）。
+   - **FTPProtocol**：实现 FTP 协议支持（待实现）。
+   - **GoogleCloudStorage**：实现 Google Cloud Storage 协议支持（待实现）。
+   - **OneDrive**：实现 OneDrive 协议支持（待实现）。
+  
+6. **LoggerProvider**
+   - **Logger**：实现日志记录功能，支持多种日志级别和输出方式。
+
+7. **ConfigurationProvider**
+   - **Configuration**：提供配置管理功能，支持模块化的配置加载。 
 
 ## 使用方法
 
@@ -96,7 +108,7 @@
 
 ## 许可证
 
-本项目采用 MIT 许可证，详情请查看 [LICENSE](/LICENSE) 文件。
+本项目采用 GPL 许可证，详情请查看 [LICENSE](/LICENSE) 文件。
 
 ## 联系
 
