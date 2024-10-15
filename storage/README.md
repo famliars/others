@@ -8,22 +8,22 @@
 
 项目的架构由以下几个主要模块组成：
 
-1. **HostProvider**
+1. **主机提供商**
    - **RestHost**：实现 RESTful API 访问。
    - **SoapHost**：实现 SOAP 服务访问（待实现）。
    - **GrpcHost**: 实现 GRPC 调用访问（待实现）。
 
-2. **SecurityProvider**
+2. **安全提供者**
    - **OpenSecurity**：实现数据加密和解密功能，确保数据传输和存储的安全性。
 
-3. **StorageProvider**
+3. **存储提供商**
    - **RAID0Storage**：实现 RAID0 存储策略。
    - **Raid5Storage**：实现 RAID5 存储策略（待实现）。
 
-4. **CacheProvider**
+4. **缓存提供者**
    - **KvCache**：实现基于键值的缓存功能。
 
-5. **ProtocolProvider**
+5. **协议提供者**
    - **S3Protocol**：实现与 Aws S3 兼容的存储协议。
    - **WebDavProtocol**：实现 WebDAV 协议支持（待实现）。
    - **SFTPProtocol**：实现 SFTP 协议支持（待实现）。
@@ -32,10 +32,10 @@
    - **GoogleCloudStorage**：实现 Google Cloud Storage 协议支持（待实现）。
    - **OneDrive**：实现 OneDrive 协议支持（待实现）。
   
-6. **LoggerProvider**
+6. **记录器提供者**
    - **Logger**：实现日志记录功能，支持多种日志级别和输出方式。
 
-7. **ConfigurationProvider**
+7. **配置提供者**
    - **Configuration**：提供配置管理功能，支持模块化的配置加载。 
 
 ## 使用方法
