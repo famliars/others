@@ -8,22 +8,22 @@
 
 项目的架构由以下几个主要模块组成：
 
-1. **主机提供商**
+1. **HostProvider**
    - **RestHost**：实现 RESTful API 访问。
    - **SoapHost**：实现 SOAP 服务访问（待实现）。
    - **GrpcHost**: 实现 GRPC 调用访问（待实现）。
 
-2. **安全提供者**
+2. **SecurityProvider**
    - **OpenSecurity**：实现数据加密和解密功能，确保数据传输和存储的安全性。
 
-3. **存储提供商**
+3. **StorageProvider**
    - **Raid0Storage**：实现 RAID0 存储策略。
    - **Raid5Storage**：实现 RAID5 存储策略（待实现）。
 
-4. **缓存提供者**
+4. **CacheProvider**
    - **KvCache**：实现基于键值的缓存功能。
 
-5. **协议提供者**
+5. **ProtocolProvider**
    - **FTPProtocol**：实现与 FTP 兼容的存储协议。
    - **WebDavProtocol**：实现 WebDAV 协议支持（待实现）。
    - **SFTPProtocol**：实现 SFTP 协议支持（待实现）。
@@ -32,10 +32,10 @@
    - **OneDriveProtocol**：实现 Microsoft OneDrive 协议支持（待实现）。
    - **CloudDriveProtocol**：实现 Google CloudDrive 协议支持（待实现）。
   
-6. **记录器提供者**
-   - **Logger**：实现日志记录功能，支持多种日志级别和输出方式。
+6. **LoggerProvider**
+   - **Recorder**：实现日志记录功能，支持多种日志级别和输出方式。
 
-7. **配置提供者**
+7. **ConfigurationProvider**
    - **Configuration**：提供配置管理功能，支持模块化的配置加载。 
 
 ## 使用方法
@@ -45,8 +45,8 @@
 1. 确保你的环境中安装了 [.NET SDK](https://dotnet.microsoft.com/download)。
 2. 克隆本项目到本地：
    ```bash
-   git clone https://github.com/yourusername/OtherStorage.git
-   cd OtherStorage
+   git clone https://github.com/famliars/Others/others.git
+   cd storage
    ```
 3. 使用命令行构建并运行项目：
    ```bash
@@ -60,16 +60,7 @@
 
 ```json
 {
-  "Logging": {
-    "LogLevel": {
-      "Default": "Information",
-      "Microsoft": "Warning"
-    }
-  },
-  "Security": {
-    "EncryptionKey": "thisIsASecretKey",
-    "InitVector": "thisIsAnInitVector"
-  }
+  
 }
 ```
 
@@ -79,22 +70,23 @@
 
 - **获取存储信息**：
   ```
-  GET /api/storage/info
+  GET 
   ```
 
 - **上传文件**：
   ```
-  POST /api/storage/upload
+  POST 
   ```
 
 - **下载文件**：
   ```
-  GET /api/storage/download/{fileId}
+  GET 
   ```
 
 ## 日志与监控
 
 该系统内置日志功能，可以通过控制台或文件记录系统的运行状态。可以定期调用性能监控模块，查看 CPU 和内存使用情况。
+
 
 ## 贡献
 
