@@ -14,7 +14,7 @@
    - **GrpcHost**: 实现 GRPC 调用访问（待实现）。
 
 2. **SecurityProvider**
-   - **OpenSecurity**：实现数据加密和解密功能，确保数据传输和存储的安全性。
+   - **OpenSecurity**：实现认证管理与数据的加密和解密功能，确保数据传输和存储的安全性。
 
 3. **StorageProvider**
    - **Raid0Storage**：实现 RAID0 存储策略。
