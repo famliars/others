@@ -17,20 +17,20 @@
    - **OpenSecurity**：实现数据加密和解密功能，确保数据传输和存储的安全性。
 
 3. **存储提供商**
-   - **RAID0Storage**：实现 RAID0 存储策略。
+   - **Raid0Storage**：实现 RAID0 存储策略。
    - **Raid5Storage**：实现 RAID5 存储策略（待实现）。
 
 4. **缓存提供者**
    - **KvCache**：实现基于键值的缓存功能。
 
 5. **协议提供者**
-   - **S3Protocol**：实现与 Aws S3 兼容的存储协议。
+   - **FTPProtocol**：实现与 FTP 兼容的存储协议。
    - **WebDavProtocol**：实现 WebDAV 协议支持（待实现）。
    - **SFTPProtocol**：实现 SFTP 协议支持（待实现）。
    - **SMBProtocol**：实现 SMB 协议支持（待实现）。
-   - **FTPProtocol**：实现 FTP 协议支持（待实现）。
-   - **GoogleCloudStorage**：实现 Google Cloud Storage 协议支持（待实现）。
-   - **OneDrive**：实现 OneDrive 协议支持（待实现）。
+   - **S3Protocol**：实现 AWS S3 协议支持（待实现）。
+   - **OneDrive**：实现 Microsoft OneDrive 协议支持（待实现）。
+   - **CloudDrive**：实现 Google CloudDrive 协议支持（待实现）。
   
 6. **记录器提供者**
    - **Logger**：实现日志记录功能，支持多种日志级别和输出方式。
