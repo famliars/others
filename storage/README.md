@@ -29,8 +29,8 @@
    - **SFTPProtocol**：实现 SFTP 协议支持（待实现）。
    - **SMBProtocol**：实现 SMB 协议支持（待实现）。
    - **S3Protocol**：实现 AWS S3 协议支持（待实现）。
-   - **OneDrive**：实现 Microsoft OneDrive 协议支持（待实现）。
-   - **CloudDrive**：实现 Google CloudDrive 协议支持（待实现）。
+   - **OneDriveProtocol**：实现 Microsoft OneDrive 协议支持（待实现）。
+   - **CloudDriveProtocol**：实现 Google CloudDrive 协议支持（待实现）。
   
 6. **记录器提供者**
    - **Logger**：实现日志记录功能，支持多种日志级别和输出方式。
