@@ -17,11 +17,11 @@
    - **OpenSecurity**：实现认证管理与数据的加密和解密功能，确保数据传输和存储的安全性。
 
 3. **StorageProvider**
-   - **Raid0Storage**：实现 RAID0 存储策略。
-   - **Raid5Storage**：实现 RAID5 存储策略（待实现）。
+   - **Raid0Storage**：实现 RAID0 条带化存储策略。
+   - **Raid5Storage**：实现 RAID5 容错性存储策略（待实现）。
 
-4. **CacheProvider**
-   - **KvCache**：实现基于键值的缓存功能。
+4. **MemoryProvider**
+   - **EvictMemory**：实现快速读写，多级存储，自动泄露。
 
 5. **ProtocolProvider**
    - **FTPProtocol**：实现与 FTP 兼容的存储协议。
