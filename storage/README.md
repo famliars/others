@@ -45,7 +45,7 @@
 1. 确保你的环境中安装了 [.NET SDK](https://dotnet.microsoft.com/download)。
 2. 克隆本项目到本地：
    ```bash
-   git clone https://github.com/famliars/Others/others.git
+   git clone https://github.com/famliars/others.git
    cd storage
    ```
 3. 使用命令行构建并运行项目：
