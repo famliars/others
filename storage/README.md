@@ -21,7 +21,7 @@
    - **Raid5Storage**：实现 RAID5 容错性存储策略（待实现）。
 
 4. **MemoryProvider**
-   - **EvictMemory**：实现快速读写，多级存储，自动泄露。
+   - **KvMemory**：实现快速读写，多级存储，自动泄露。
 
 5. **ProtocolProvider**
    - **FTPProtocol**：实现与 FTP 兼容的存储协议。
